@@ -2,11 +2,14 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         File file = new File("text.txt");
         String myText = new String(Files.readAllBytes(Paths.get(file.getPath())));
+
+        Scanner myText2 = new Scanner(new File("tom1.txt"));
 
         String cryptedText = (new CryptDecrypt(myText.toLowerCase(), 2)).crypt();
         System.out.println(cryptedText);
@@ -27,7 +30,7 @@ public class Main {
 
 class CryptDecrypt {
     private char[] textArr;
-    private char[] srcAlphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя".toCharArray();
+    private final char[] srcAlphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя".toCharArray();
     private int size = srcAlphabet.length;
     private char[] cryptAlphabet = new char[size];
 
@@ -48,7 +51,7 @@ class CryptDecrypt {
 
     String crypt() {
         for (int i = 0; i < textArr.length; i++) {
-            for (int j = 0; j < srcAlphabet.length; j++) {
+            for (int j = 0; j < size; j++) {
                 if (textArr[i] == srcAlphabet[j]) {
                     textArr[i] = cryptAlphabet[j];
                     break;
@@ -62,7 +65,7 @@ class CryptDecrypt {
 
     String decrypt() {
         for (int i = 0; i < textArr.length; i++) {
-            for (int j = 0; j < cryptAlphabet.length; j++) {
+            for (int j = 0; j < size; j++) {
                 if (textArr[i] == cryptAlphabet[j]) {
                     textArr[i] = srcAlphabet[j];
                     break;
@@ -75,7 +78,7 @@ class CryptDecrypt {
     }
 
     void frequency() {
-        int counts[] = new int[srcAlphabet.length];
+        int counts[] = new int[size];
         for (char letter : textArr) {
             switch (letter) {
                 case 'а':
@@ -179,7 +182,7 @@ class CryptDecrypt {
                     break;
             }
         }
-        for (int i = 0; i < srcAlphabet.length; i++) {
+        for (int i = 0; i < size; i++) {
             System.out.println(srcAlphabet[i] + ": " + counts[i]);
         }
 
