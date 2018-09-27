@@ -1,38 +1,51 @@
+import com.sun.deploy.util.ArrayUtil;
+
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        File file = new File("text.txt");
-        String myText = new String(Files.readAllBytes(Paths.get(file.getPath())));
+//        File file = new File("text.txt");
+//        String myText = new String(Files.readAllBytes(Paths.get(file.getPath())));
+//
+//        String cryptedText = (new CryptDecrypt(myText.toLowerCase(), 2)).crypt();
+//        System.out.println(cryptedText);
+//
+//        System.out.println();
+//
+//        String decryptedText = (new CryptDecrypt(cryptedText, 2)).decrypt();
+//        System.out.println(decryptedText);
+//
+//        System.out.println();
+//
+//        File file2 = new File("lt1.txt");
+//        String vnm = new String(Files.readAllBytes(Paths.get(file.getPath())));
 
-        Scanner myText2 = new Scanner(new File("tom1.txt"));
+//        Scanner myText2 = new Scanner(new File("text.txt"));
+//        (new CryptDecrypt(myText2)).showFrequency();
 
-        String cryptedText = (new CryptDecrypt(myText.toLowerCase(), 2)).crypt();
-        System.out.println(cryptedText);
-
-        System.out.println();
-
-        String decryptedText = (new CryptDecrypt(cryptedText, 2)).decrypt();
-        System.out.println(decryptedText);
-
-        System.out.println();
-
-        File file2 = new File("lt1.txt");
-        String vnm = new String(Files.readAllBytes(Paths.get(file.getPath())));
-
-        (new CryptDecrypt(vnm.toLowerCase())).frequency();
-        }
+        new CryptDecrypt("атестяеё", 3);
+    }
     }
 
 class CryptDecrypt {
     private char[] textArr;
-    private final char[] srcAlphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя".toCharArray();
-    private int size = srcAlphabet.length;
-    private char[] cryptAlphabet = new char[size];
+    private final String alphabet1 = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+    private final char[] alphabet = alphabet1.toCharArray();
+    private final int firstLetter = alphabet[0];
+    private final int size = alphabet.length;
+    private int countAL[] = new int[size];
+    private double countTL;
+
+    CryptDecrypt(Scanner file) {
+        while (file.hasNextLine()) {
+            textArr = file.nextLine().toCharArray();
+            countTL += textArr.length;
+            frequency();
+        }
+    }
 
     CryptDecrypt(String text) {
         textArr = text.toCharArray();
@@ -40,151 +53,166 @@ class CryptDecrypt {
 
     CryptDecrypt(String text, int shift) {
         textArr = text.toCharArray();
-        for (int i = shift, j = 0; i < size; i++, j++) {
-            cryptAlphabet[j] = srcAlphabet[i];
-        }
 
-        for (int i = 0, j = size - shift; j < size; i++, j++) {
-            cryptAlphabet[j] = srcAlphabet[i];
-        }
-    }
-
-    String crypt() {
         for (int i = 0; i < textArr.length; i++) {
-            for (int j = 0; j < size; j++) {
-                if (textArr[i] == srcAlphabet[j]) {
-                    textArr[i] = cryptAlphabet[j];
-                    break;
-                }
-            }
+            //ниже костыль для ё
+            int index_element = (textArr[i] == 'ё'? textArr[i] - ('ё'-'е') : textArr[i]) - firstLetter;
+            int if_e = (int) textArr[i] > 'е'? 1 : 0;
+            int offset = (index_element + if_e + shift) % size;
+//            int offset = (alphabet1.indexOf(textArr[i]) + shift) % size;
+            textArr[i] = alphabet[offset];
         }
-        System.out.println(srcAlphabet);
-        System.out.println(cryptAlphabet);
-        return String.valueOf(textArr);
+        System.out.println(textArr);
+//        for (int i = shift, j = 0; i < size; i++, j++) {
+//            cryptAlphabet[j] = srcAlphabet[i];
+//        }
+//
+//        for (int i = 0, j = size - shift; j < size; i++, j++) {
+//            cryptAlphabet[j] = srcAlphabet[i];
+//        }
     }
 
-    String decrypt() {
-        for (int i = 0; i < textArr.length; i++) {
-            for (int j = 0; j < size; j++) {
-                if (textArr[i] == cryptAlphabet[j]) {
-                    textArr[i] = srcAlphabet[j];
-                    break;
-                }
-            }
-        }
-        System.out.println(cryptAlphabet);
-        System.out.println(srcAlphabet);
-        return String.valueOf(textArr);
-    }
+
+//    String crypt() {
+//        for (int i = 0; i < textArr.length; i++) {
+//            for (int j = 0; j < size; j++) {
+//                if (textArr[i] == srcAlphabet[j]) {
+//                    textArr[i] = cryptAlphabet[j];
+//                    break;
+//                }
+//            }
+//        }
+//        System.out.println(srcAlphabet);
+//        System.out.println(cryptAlphabet);
+//        return String.valueOf(textArr);
+//    }
+//
+//    String decrypt() {
+//        for (int i = 0; i < textArr.length; i++) {
+//            for (int j = 0; j < size; j++) {
+//                if (textArr[i] == cryptAlphabet[j]) {
+//                    textArr[i] = srcAlphabet[j];
+//                    break;
+//                }
+//            }
+//        }
+//        System.out.println(cryptAlphabet);
+//        System.out.println(srcAlphabet);
+//        return String.valueOf(textArr);
+//    }
 
     void frequency() {
-        int counts[] = new int[size];
         for (char letter : textArr) {
             switch (letter) {
                 case 'а':
-                    counts[0]++;
+                    countAL[0]++;
                     break;
                 case 'б':
-                    counts[1]++;
+                    countAL[1]++;
                     break;
                 case 'в':
-                    counts[2]++;
+                    countAL[2]++;
                     break;
                 case 'г':
-                    counts[3]++;
+                    countAL[3]++;
                     break;
                 case 'д':
-                    counts[4]++;
+                    countAL[4]++;
                     break;
                 case 'е':
-                    counts[5]++;
+                    countAL[5]++;
                     break;
                 case 'ё':
-                    counts[6]++;
+                    countAL[6]++;
                     break;
                 case 'ж':
-                    counts[7]++;
+                    countAL[7]++;
                     break;
                 case 'з':
-                    counts[8]++;
+                    countAL[8]++;
                     break;
                 case 'и':
-                    counts[9]++;
+                    countAL[9]++;
                     break;
                 case 'й':
-                    counts[10]++;
+                    countAL[10]++;
                     break;
                 case 'к':
-                    counts[11]++;
+                    countAL[11]++;
                     break;
                 case 'л':
-                    counts[12]++;
+                    countAL[12]++;
                     break;
                 case 'м':
-                    counts[13]++;
+                    countAL[13]++;
                     break;
                 case 'н':
-                    counts[14]++;
+                    countAL[14]++;
                     break;
                 case 'о':
-                    counts[15]++;
+                    countAL[15]++;
                     break;
                 case 'п':
-                    counts[16]++;
+                    countAL[16]++;
                     break;
                 case 'р':
-                    counts[17]++;
+                    countAL[17]++;
                     break;
                 case 'с':
-                    counts[18]++;
+                    countAL[18]++;
                     break;
                 case 'т':
-                    counts[19]++;
+                    countAL[19]++;
                     break;
                 case 'у':
-                    counts[20]++;
+                    countAL[20]++;
                     break;
                 case 'ф':
-                    counts[21]++;
+                    countAL[21]++;
                     break;
                 case 'х':
-                    counts[22]++;
+                    countAL[22]++;
                     break;
                 case 'ц':
-                    counts[23]++;
+                    countAL[23]++;
                     break;
                 case 'ч':
-                    counts[24]++;
+                    countAL[24]++;
                     break;
                 case 'ш':
-                    counts[25]++;
+                    countAL[25]++;
                     break;
                 case 'щ':
-                    counts[26]++;
+                    countAL[26]++;
                     break;
                 case 'ъ':
-                    counts[27]++;
+                    countAL[27]++;
                     break;
                 case 'ы':
-                    counts[28]++;
+                    countAL[28]++;
                     break;
                 case 'ь':
-                    counts[29]++;
+                    countAL[29]++;
                     break;
                 case 'э':
-                    counts[30]++;
+                    countAL[30]++;
                     break;
                 case 'ю':
-                    counts[31]++;
+                    countAL[31]++;
                     break;
                 case 'я':
-                    counts[32]++;
+                    countAL[32]++;
                     break;
             }
         }
-        for (int i = 0; i < size; i++) {
-            System.out.println(srcAlphabet[i] + ": " + counts[i]);
-        }
 
     }
+
+//    void showFrequency() {
+//        double freqL;
+//        for (int i = 0; i < size; i++) {
+//            freqL = (countAL[i]/countTL)*100;
+//            System.out.println(srcAlphabet[i] + ": " + freqL);
+//        }
+//    }
 }
