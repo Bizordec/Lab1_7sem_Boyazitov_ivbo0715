@@ -1,8 +1,4 @@
-import com.sun.deploy.util.ArrayUtil;
-
-import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -25,16 +21,18 @@ public class Main {
 
 //        Scanner myText2 = new Scanner(new File("text.txt"));
 //        (new CryptDecrypt(myText2)).showFrequency();
-
-        new CryptDecrypt("атестяеё", 3);
+        String srcText = "вчера";
+        System.out.println(srcText);
+        String newText = new CryptDecrypt(srcText).crypt(2);
+        System.out.println(newText);
+        System.out.println(new CryptDecrypt(newText).decrypt(2));
     }
     }
 
 class CryptDecrypt {
     private char[] textArr;
-    private final String alphabet1 = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
-    private final char[] alphabet = alphabet1.toCharArray();
-    private final int firstLetter = alphabet[0];
+    private final char[] alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя".toCharArray();
+    private int firstL = alphabet[0];
     private final int size = alphabet.length;
     private int countAL[] = new int[size];
     private double countTL;
@@ -43,7 +41,6 @@ class CryptDecrypt {
         while (file.hasNextLine()) {
             textArr = file.nextLine().toCharArray();
             countTL += textArr.length;
-            frequency();
         }
     }
 
@@ -51,27 +48,27 @@ class CryptDecrypt {
         textArr = text.toCharArray();
     }
 
-    CryptDecrypt(String text, int shift) {
-        textArr = text.toCharArray();
-
-        for (int i = 0; i < textArr.length; i++) {
-            //ниже костыль для ё
-            int index_element = (textArr[i] == 'ё'? textArr[i] - ('ё'-'е') : textArr[i]) - firstLetter;
-            int if_e = (int) textArr[i] > 'е'? 1 : 0;
-            int offset = (index_element + if_e + shift) % size;
-//            int offset = (alphabet1.indexOf(textArr[i]) + shift) % size;
-            textArr[i] = alphabet[offset];
-        }
-        System.out.println(textArr);
-//        for (int i = shift, j = 0; i < size; i++, j++) {
-//            cryptAlphabet[j] = srcAlphabet[i];
-//        }
-//
-//        for (int i = 0, j = size - shift; j < size; i++, j++) {
-//            cryptAlphabet[j] = srcAlphabet[i];
-//        }
+    private int indexL (char letter) {
+        int if_e2 = (letter == 'ё' ? letter - ('ё'-'е') : letter);
+        int if_after_e = (letter > 'е'? 1 : 0);
+        return (if_e2 + if_after_e) - firstL;
     }
 
+    String crypt(int shift) {
+        for (int i = 0; i < textArr.length; i++) {
+            int offset = (indexL(textArr[i]) + shift) % size;
+            textArr[i] = alphabet[offset];
+        }
+        return String.valueOf(textArr);
+    }
+
+    String decrypt(int shift) {
+        for (int i = 0; i < textArr.length; i++) {
+            int offset = (indexL(textArr[i]) - shift) % size;
+            textArr[i] = alphabet[offset];
+        }
+        return String.valueOf(textArr);
+    }
 
 //    String crypt() {
 //        for (int i = 0; i < textArr.length; i++) {
