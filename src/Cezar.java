@@ -28,6 +28,6 @@ class Cezar {
     }
 
     static List<char[]> decrypt(String text, int shift) throws IOException {
-        return crypt(text, (alphSize - shift));
+        return crypt(text, (alphSize - (shift % alphSize)));
     }
 }

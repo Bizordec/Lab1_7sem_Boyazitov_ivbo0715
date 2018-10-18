@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d304bb6-dbe4-45c5-80af-5123059ca666" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Cezar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FreqAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="3d304bb6-dbe4-45c5-80af-5123059ca666" name="Default" comment="i guess it works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab1_7sem_Boyazitov_ivbo0715/CryptDecrypt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab1_7sem_Boyazitov_ivbo0715/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab1_7sem_Boyazitov_ivbo0715/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tom1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tom2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tom3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tom4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1_7sem/CryptDecrypt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab1_7sem/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cezar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cezar.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,23 +36,24 @@
     <session id="680191743">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.62" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3874" />
-          <entry key="txt" value="18" />
+          <entry key="java" value="3894" />
+          <entry key="txt" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3874" />
-          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="JAVA" value="3894" />
+          <entry key="PLAIN_TEXT" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -83,68 +75,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="306">
+              <caret line="18" column="72" lean-forward="true" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CezarDecrypted.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FreqAnalysis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2227">
-              <caret line="131" column="17" lean-forward="true" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CezarCrypted.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="1218" selection-start-line="1218" selection-end-line="1218" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FreqDecrypted.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20706">
-              <caret line="1218" selection-start-line="1218" selection-end-line="1218" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/The_Lord_Of_The_Rings.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -152,8 +87,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cezar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="433">
+              <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FreqAnalysis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1046">
+              <caret line="41" column="53" lean-forward="true" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,11 +111,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Text.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="102">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/The_Lord_Of_The_Rings.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chapter.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CezarCrypted.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20060">
+              <caret line="1180" column="77" lean-forward="true" selection-start-line="1180" selection-start-column="77" selection-end-line="1180" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CezarDecrypted.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FreqDecrypted.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -193,10 +181,10 @@
         <option value="$PROJECT_DIR$/text.txt" />
         <option value="$PROJECT_DIR$/Chapter.txt" />
         <option value="$PROJECT_DIR$/src/Text.java" />
-        <option value="$PROJECT_DIR$/src/Cezar.java" />
         <option value="$PROJECT_DIR$/Test.txt" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/FreqAnalysis.java" />
+        <option value="$PROJECT_DIR$/src/Cezar.java" />
       </list>
     </option>
   </component>
@@ -217,7 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,13 +221,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539832384569" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539832484278" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laba1-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
   </component>
@@ -339,7 +327,8 @@
       <workItem from="1539519126573" duration="494000" />
       <workItem from="1539530423338" duration="144000" />
       <workItem from="1539685558847" duration="6595000" />
-      <workItem from="1539772518224" duration="34473000" />
+      <workItem from="1539772518224" duration="35562000" />
+      <workItem from="1539834093152" duration="1781000" />
     </task>
     <task id="LOCAL-00001" summary="optimal solution">
       <created>1538070672744</created>
@@ -362,17 +351,23 @@
       <option name="project" value="LOCAL" />
       <updated>1539518085460</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="i guess it works">
+      <created>1539832424591</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539832424591</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105150000" />
+    <option name="totallyTimeSpent" value="108020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22622108" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22879177" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -381,7 +376,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14555256" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3773585" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3962264" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -412,19 +407,10 @@
     <MESSAGE value="optimal solution" />
     <MESSAGE value="more optimised + added decrypt()" />
     <MESSAGE value="added bigrams" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bigrams" />
+    <MESSAGE value="i guess it works" />
+    <option name="LAST_COMMIT_MESSAGE" value="i guess it works" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="alphabet" language="JAVA" />
@@ -508,11 +494,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tom3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111997" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tom3.txt" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/text/DecimalFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -573,40 +555,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
           <caret line="1497" selection-start-line="1497" selection-end-line="1497" />
-          <folding>
-            <element signature="e#28403#28404#0" expanded="true" />
-            <element signature="e#28450#28451#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tom1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="191" selection-end-line="6894" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adams_douglas_the_hitchhiker_s_guide_to_the_galaxy.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="4" column="48" lean-forward="true" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/text.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/decryptedTextFile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lord_of_the_Rings.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tom1.txt" />
+    <entry file="file://$PROJECT_DIR$/adams_douglas_the_hitchhiker_s_guide_to_the_galaxy.txt" />
+    <entry file="file://$PROJECT_DIR$/text.txt" />
+    <entry file="file://$PROJECT_DIR$/decryptedTextFile.txt" />
+    <entry file="file://$PROJECT_DIR$/Lord_of_the_Rings.txt" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/io/FileNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -614,34 +570,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/decryptedFreqTextFile.txt">
+    <entry file="file://$PROJECT_DIR$/decryptedFreqTextFile.txt" />
+    <entry file="file://$PROJECT_DIR$/cryptedTextFile.txt" />
+    <entry file="file://$PROJECT_DIR$/Test.txt" />
+    <entry file="file://$PROJECT_DIR$/src/Text.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cryptedTextFile.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cezar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Text.java">
+    <entry file="file://$PROJECT_DIR$/CezarCrypted.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="20060">
+          <caret line="1180" column="77" lean-forward="true" selection-start-line="1180" selection-start-column="77" selection-end-line="1180" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CezarDecrypted.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cezar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="30" column="60" lean-forward="true" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -650,63 +605,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/The_Lord_Of_The_Rings.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CezarDecrypted.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FreqDecrypted.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20706">
-          <caret line="1218" selection-start-line="1218" selection-end-line="1218" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FreqAnalysis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="131" column="17" lean-forward="true" selection-start-line="131" selection-start-column="17" selection-end-line="131" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test.txt">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        <state relative-caret-position="306">
+          <caret line="18" column="72" lean-forward="true" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CezarCrypted.txt">
+    <entry file="file://$PROJECT_DIR$/src/FreqAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="1218" selection-start-line="1218" selection-end-line="1218" />
+        <state relative-caret-position="-1046">
+          <caret line="41" column="53" lean-forward="true" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FreqDecrypted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
         </state>
       </provider>
     </entry>
